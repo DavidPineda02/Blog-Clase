@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=, initial-scale=1.0">
+        <title>Suscribete</title>
+    </head>
+    <body>
+        <header>
+            <h1>Blog de Baloncesto</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Historia Del Baloncesto</a></li>
+                    <li><a href="table.html">Jugadores Famosos</a></li>
+                    <li><a href="form.html">Suscribete</a></li>
+                </ul>
+            </nav>
+        </header>
+        <hr>
+        <form>
+            <h2>Suscríbete a Nuestro Blog</h2>
+            <fieldset>
+                <legend>Información de contacto</legend>
+                <div>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <br>
+                <div>
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" id="apellido" name="apellido" required>
+                </div>
+                <br>
+                <div>
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <br>
+                <div>
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" pattern="[0-9]{7,11}" required>
+                </div>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Datos adicionales</legend>
+                <div>
+                    <label for="ciudad">Ciudad:</label>
+                    <select id="ciudad" name="ciudad">
+                        <option value="Giron">Girón</option>
+                        <option value="Bucaramanga">Bucaramanga</option>
+                        <option value="Floridablanca">Floridablanca</option>
+                        <option value="Piedecuesta">Piedecuesta</option>
+                    </select>
+                </div>
+                <br>
+                <div>
+                    <label for="sexo">Género:</label>
+                    <input type="radio" id="masculino" name="sexo" value="M"> Masculino
+                    <input type="radio" id="femenino" name="sexo" value="F"> Femenino
+                </div>
+            </fieldset>
+            <br>
+            <button type="submit">Suscribirse</button>
+        </form>
+    </body>
+</html>
